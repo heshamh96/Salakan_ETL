@@ -1,4 +1,15 @@
 import pyodbc 
+import pandas as pd
+def Set_Up_a_CSV_File_Connection():
+    path=input("Enter the Path to the File")
+    filename=input("Enter the File Name")
+    df =pd.read_csv(path+'/'+filename)
+    return df
+    
+
+
+
+
 def Set_Up_SQL_Server_Connection():
 
 # Some other example server values are
